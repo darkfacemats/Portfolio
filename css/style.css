@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eedecb;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+h2{
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.name-title {
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-title {
+  font-size: 80px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+
+.custom-btn {
+  border: 5px solid black;
+  font-size: 25px;
+  padding: 1px 40px;
+}
+
+.custom-hr {
+  border: none;
+  border-top: 4px solid black;
+  width: 70%;
+  margin: 20px auto;
+  opacity: 100;
+}
+
+
+.pip{
+  margin-bottom: 60px;
+
+}
+.customtxt{
+  font-weight: bold;
+  font-size: large;
+}
+.text-container {
+  margin-top: 40px;
+}
+
+.test{
+max-width: 400px;
+max-height:auto;
+}
+
+.wiebenik{
+  text-align: center;
+  font-weight: 900;
+}
+/* style.css */
+
+
+.space{
+  margin-top: 50px;
+}
+.custom{
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.foto4{
+  margin-top: 40px;
+  max-width: 600px;
+  width: 100%;
+}

@@ -81,3 +81,49 @@ max-height:auto;
   max-width: 600px;
   width: 100%;
 }
+
+.clickable-card {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.clickable-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color: #1f1f24;
+  color: white;
+}
+
+.clickable-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+  .center-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: #efe2d0;
+    color: black;
+}
+.custom-btn:hover {
+  background-color: #1f1f24;
+  color: white;
+}

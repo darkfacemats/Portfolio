@@ -1,19 +1,25 @@
+/* Algemene body-styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #eedecb;
+  background-color: #eedecb; 
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-h1{
+/* Titels */
+h1, h2 {
   margin-bottom: 40px;
   font-weight: bold;
 }
-h2{
-  margin-bottom: 40px;
+
+header {
+  font-size: 2rem;
   font-weight: bold;
+  margin: 100px 0;
 }
+
+/* Naam en titels */
 .name-title {
   margin-top: 50px;
   margin-bottom: -50px;
@@ -29,12 +35,19 @@ h2{
   z-index: 2;
 }
 
+/* Buttons en knoppen */
 .custom-btn {
   border: 3px solid black;
   font-size: 25px;
   padding: 1px 40px;
 }
 
+.custom-btn:hover {
+  background-color: #1f1f24;
+  color: white;
+}
+
+/* HR lijn */
 .custom-hr {
   border: none;
   border-top: 4px solid black;
@@ -43,40 +56,42 @@ h2{
   opacity: 100;
 }
 
-
-.pip{
-  margin-bottom: 60px;
-
-}
-.customtxt{
+/* Teksten en marges */
+.customtxt {
   font-weight: bold;
   font-size: large;
 }
+
 .text-container {
   margin-top: 40px;
 }
 
-.test{
-max-width: 400px;
-max-height:auto;
+.pip {
+  margin-bottom: 60px;
 }
 
-.wiebenik{
+.test {
+  max-width: 400px;
+  height: auto;
+}
+
+.wiebenik {
   text-align: center;
   font-weight: 900;
 }
-/* style.css */
 
-
-.space{
+.space {
   margin-top: 50px;
 }
-.custom{
+
+.custom {
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 30px;
 }
-.foto4{
+
+/* Afbeeldingen */
+.foto4 {
   margin-top: 40px;
   max-width: 600px;
   width: 100%;
@@ -90,12 +105,11 @@ max-height:auto;
   display: block;
   padding: 10px;
   border-radius: 10px;
-  
 }
 
 .clickable-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background-color: #1f1f24;
   color: white;
 }
@@ -105,25 +119,56 @@ max-height:auto;
   height: auto;
   border-radius: 10px;
 }
+
 p {
   font-size: 20px;
   margin: 10px 0;
 }
 
-  .center-wrapper {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav a {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid black;
-    background-color: #efe2d0;
-    color: black;
+/* Centrerende wrapper */
+.center-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.custom-btn:hover {
-  background-color: #1f1f24;
+
+/* Navigatie */
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 4px solid black;
+  background-color: #efe2d0;
+  color: black;
+}
+
+/* Formulieren */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 0px;
+}
+
+input,
+textarea,
+button {
+  text-align: center;
+  width: 255px;
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 1rem;
+  background-color: #efe2d0;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-bottom: 200px;
+  background-color: black;
   color: white;
+  cursor: pointer;
 }

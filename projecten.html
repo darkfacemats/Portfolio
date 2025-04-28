@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <script src="/Projecten/script.js"></script>
+<style>
+/*ik heb dit hier gezet omdat ik andes conflicten kreeg inverbad mijn css*/
+article {
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+article.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+</style>
 <body >
   <h2 style="margin-top: 2rem; margin-bottom: -2rem;" >Projecten</h2><br>
 

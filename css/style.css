@@ -1,121 +1,3 @@
-/***
-    The new CSS reset - version 1.11.3 (last updated 25.08.2024)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
- */
- *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
-
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Fix mobile Safari increase font-size on landscape mode */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Reapply the pointer cursor for anchor tags */
-a, button {
-  cursor: revert;
-}
-
-/* Remove list styles (bullets/numbers) */
-ol, ul, menu, summary {
-  list-style: none;
-}
-
-/* Firefox: solve issue where nested ordered lists continue numbering from parent (https://bugzilla.mozilla.org/show_bug.cgi?id=1881517) */
-ol {
-  counter-reset: revert;
-}
-
-/* For images to not be able to exceed their container */
-img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
-
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
-
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-  -webkit-user-select: auto;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
-
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-
-/* preformatted text - use only for this feature */
-:where(pre) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-/* reset default text opacity of input placeholder */
-::placeholder {
-  color: unset;
-}
-
-/* fix the feature of 'hidden' attribute.
- display:revert; revert to element instead of attribute */
-:where([hidden]) {
-  display: none;
-}
-
-/* revert for bug in Chromium browsers
- - fix for the content editable attribute will work properly.
- - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable="false"])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
-  -webkit-user-drag: element;
-}
-
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-/* Remove details summary webkit styles */
-::-webkit-details-marker {
-  display: none;
-}
-
-
-
-/* END RESET CSS*/
 
 
 /* Algemene body-styling */
@@ -155,18 +37,6 @@ header {
   z-index: 2;
 }
 
-/* Buttons en knoppen */
-.custom-btn {
-  border: 3px solid black;
-  font-size: 25px;
-  padding: 1px 4px;
-  
-}
-
-.custom-btn:hover {
-  background-color: #1f1f24;
-  color: white;
-}
 
 /* HR lijn */
 .custom-hr {
@@ -211,50 +81,27 @@ header {
   margin-bottom: 30px;
 }
 
-/* Afbeeldingen */
-.foto4 {
-  margin-top: 40px;
-  max-width: 600px;
-  width: 100%;
-}
-
-.clickable-card {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: block;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.clickable-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #1f1f24;
-  color: white;
-}
-
-.clickable-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
 
 p {
   font-size: 20px;
   margin: 10px 0;
 }
 
-/* Centrerende wrapper */
-.center-wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Navigatie */
+
+.custom-btn {
+  border: 3px solid black;
+  font-size: 25px;
+  padding: 1px 4px;
+  
+}
+
+.custom-btn:hover {
+  background-color: #1f1f24;
+  color: white;
+}
+
 nav a {
   text-decoration: none;
   padding: 10px 20px;
@@ -263,35 +110,14 @@ nav a {
   color: black;
 }
 
-/* Formulieren */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 0px;
+/* voor de jsscript */
+.fade-in {
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-input,
-textarea,
-button {
-  text-align: center;
-  width: 255px;
-  padding: 10px;
-  border: 3px solid black;
-  font-size: 1rem;
-  background-color: #efe2d0;
+.fade-in.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
-
-textarea {
-  height: 100px;
-}
-
-button {
-  margin-bottom: 200px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  
-}
-

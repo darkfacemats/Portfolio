@@ -17,6 +17,6 @@
 
       setTimeout(() => {
         el.classList.add('show'); // laat het element zichtbaar worden
-      }, index * 250); // telkens 250ms vertraging tussen elementen
+      }, index * 200); // telkens 250ms vertraging tussen elementen
     });
   });

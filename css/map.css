@@ -1,0 +1,10 @@
+#apMap {
+    margin-left: auto;
+    margin-right: auto;
+    /* neem de volle breedte in van het parent element */
+    border: 3px solid #000;
+    width: 360px;
+    height: 240px;
+
+}
+

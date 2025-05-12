@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eedecb; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+  #apMap {
+    margin-left: auto;
+    margin-right: auto;
+    /* neem de volle breedte in van het parent element */
+    border: 3px solid #000;
+    width: 360px;
+    height: 240px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 0px;
+}
+
+/* HR lijn */
+.custom-hr {
+  border: none;
+  border-top: 4px solid black;
+  width: 70%;
+  margin: 20px auto;
+  opacity: 100;
+}
+
+input,
+textarea,
+button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 255px;
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 1rem;
+  background-color: #efe2d0;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Titels */
+h1 {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Buttons en knoppen */
+.custom-btn:hover {
+  background-color: #1f1f24;
+  color: white;
+}
+
+/* Navigatie */
+nav a {
+  border: 3px solid black;  
+  text-decoration: none;
+  font-size: 25px;
+  padding: 1px 4px;
+  background-color: #efe2d0;
+  color: black;
+
+}
+
+/* DESKTOP GROTER MAKEN */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  form {
+    gap: 25px;
+    margin-top: 100px;
+  }
+
+  input,
+  textarea,
+  button {
+    height: 100px;
+    width: 360px;
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+  #apMap {
+    margin-left: auto;
+    margin-right: auto;
+    /* neem de volle breedte in van het parent element */
+    border: 3px solid #000;
+    width: 490px;
+    height: 340px;
+
+}
+
+  button {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  nav a {
+  border: 3px solid black;  
+  text-decoration: none;
+  font-size: 30px;
+  padding: 1px 4px;
+  background-color: #efe2d0;
+  color: black;
+  }
+
+  .custom-hr {
+    width: 80%;
+    border-top: 5px solid black;
+    margin: 30px auto;
+  }
+}

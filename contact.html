@@ -27,21 +27,22 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
 
   <script src="js/map-ap.js" defer></script>
+  <script src="js/jaar.js" defer></script>
 </head>
 
 <body>
   <section>
-    <header><h2>Contact</h2></header>
+    <header><h2>Contact <img src="/fotos/iot.png"width="100" height="100" alt="iot logo"></h2></header>
     <hr class="custom-hr">
   </section>
 
   <section>
-    <form name="contact" netlify>
-      <input name="naam" type="text" placeholder="Naam" required>
-      <input name="email" type="email" placeholder="Email" required>
-      <textarea name="text" placeholder="Jouw bericht"></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <form name="contact" method="POST" netlify action="/bedankt.html">
+  <input name="naam" type="text" placeholder="Naam" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <textarea name="text" placeholder="Jouw bericht"></textarea>
+  <button type="submit">Send</button>
+  </form>
   </section>
 
   <map class="container">
@@ -60,8 +61,7 @@
       <a href="./contact.html" class="custom-btn"><strong>Contact</strong></a>
     </nav>
   </map>
-  <footer style="text-align: center; margin-top: 40px;">
-    &copy; 2025 Matthias Benneke
-  </footer>
+  <footer class="container-fluid text-center h6 small p-4 mt-5">&copy; <span id="jaar"></span> Matthias Benneke</footer>
+
 </body>
 </html>

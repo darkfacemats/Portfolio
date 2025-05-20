@@ -26,6 +26,7 @@ form {
 
 /* HR lijn */
 .custom-hr {
+
   border: none;
   border-top: 4px solid black;
   width: 70%;
@@ -66,7 +67,6 @@ h1 {
 
 h2 {
   margin-top: 10px;
-  margin-bottom: 40px;
   font-weight: bold;
   font-size: 1.5rem;
 }

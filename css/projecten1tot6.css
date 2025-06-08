@@ -76,13 +76,3 @@ nav{
 margin-top: -1rem;
 margin-bottom: 2rem
 }
-@media (max-width: 767px) {
-  figure {
-    margin-top: 20px;
-  }
-
-  p {
-    padding: 0 10px;
-    text-align: left;
-  }
-}
